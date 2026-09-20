@@ -1,0 +1,66 @@
+
+
+.education{
+    background-color: rgb(8, 18, 47);
+    color:white;
+    padding : 50px 50px 40px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    h1{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        box-shadow: 0 0 1px lightblue;
+        padding: 10px 20px;
+        width: fit-content;
+        border-radius: 50px;
+        font-size: 25px;
+        .dot{
+            height: 10px;
+            width:10px;
+            background-color: aqua;
+            border-radius:50% ;
+        }
+    }
+    h2{
+        font-size: 32px;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 870px;
+        .card{
+            box-shadow: 0 0 2px grey;
+            padding:20px 40px;
+            display: flex;
+            gap:20px;
+            border-radius: 20px;
+            .left{
+                font-size: 17px;
+                padding: 8px;
+                box-shadow:  0 0 2px grey;
+                border-radius: 12px;
+                height: fit-content;
+                color: aqua;
+                background-color: rgb(60, 92, 92);
+            }
+            .right{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                h2{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 13px;
+                    color:grey
+                }
+                .colname{
+                    color: aqua;
+                }
+            }
+        }
+    }
+}

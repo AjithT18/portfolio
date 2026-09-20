@@ -4,6 +4,7 @@ import About from "./Components/About"
 import Skills from "./Components/Skills"
 import Project from "./Components/Project"
 import Experince from "./Components/Experience"
+import Education from "./Components/Education"
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Skills/>
       <Project/>
       <Experince/>
+      <Education/>
     </>
   )
 }
