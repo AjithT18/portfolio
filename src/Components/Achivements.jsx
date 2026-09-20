@@ -41,6 +41,7 @@ function Achivements(){
                     </div>
                 </div>
             </div>
+            <hr />
         </>
     )
 }
