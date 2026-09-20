@@ -4,8 +4,8 @@
 .about{
     background-color: rgb(8, 18, 47);
     color:white;
-    padding : 20px 50px 40px 120px;
-    padding-top: 50px;
+    padding : 50px 50px 40px 120px;
+   
     display: flex;
     flex-direction: column;
     gap: 25px;
