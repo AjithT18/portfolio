@@ -3,6 +3,7 @@ import Home from "./Components/Home"
 import About from "./Components/About"
 import Skills from "./Components/Skills"
 import Project from "./Components/Project"
+import Experince from "./Components/Experience"
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <About/>
       <Skills/>
       <Project/>
+      <Experince/>
     </>
   )
 }
