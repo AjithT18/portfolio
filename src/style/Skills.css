@@ -1,9 +1,9 @@
 
 
 .skills{
-    background-color: rgb(8, 18, 47);
+    background-color: rgb(6, 14, 21);
     color:white;
-    padding : 50px 50px 40px 120px;
+    padding: 50px 200px 30px 170px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -11,14 +11,14 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        box-shadow: 0 0 1px lightblue;
+        border: 1px solid rgb(20, 40, 54);
         padding: 10px 20px;
         width: fit-content;
         border-radius: 50px;
-        font-size: 25px;
+        font-size: 15px;
         .dot{
-            height: 10px;
-            width:10px;
+            height: 7px;
+            width:7px;
             background-color: aqua;
             border-radius:50% ;
         }
@@ -31,23 +31,26 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
-            box-shadow: 0 0 2px grey;
+            border:2px solid rgb(20, 40, 54);
             padding: 20px;
-            width: 270px;
+            width: 320px;
             margin-bottom: 20px;
             border-radius: 10px;
+            background-color: rgb(13, 26, 35);
             .title{
                 display: flex;
                 gap: 10px;
                 i{
                     color: aqua;
                     box-shadow: 0 0 2px grey;
-                    padding: 3px 7px;
+                    padding: 5px 7px 4px 7px;
                     border-radius: 50px;
-                    background-color:rgb(60, 92, 92);
+                    background-color:rgb(43, 46, 58);
                 }
                 p{
                     color: white;
+                    font-size: 20px;
+                    margin-top: 2px;
                 }
             }
             .langs{
@@ -59,7 +62,7 @@
                     box-shadow: 0 0 2px grey;
                     border-radius: 30px;
                     color: grey;
-                    font-size: 10px;
+                    font-size: 12px;
                 }
             }
 

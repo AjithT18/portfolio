@@ -2,9 +2,9 @@
     font-family:'Inter', sans-serif ;
 }
 .about{
-    background-color: rgb(8, 18, 47);
+    background-color: rgb(6, 14, 21);
     color:white;
-    padding : 50px 50px 40px 120px;
+    padding: 50px 200px 30px 170px;
    
     display: flex;
     flex-direction: column;
@@ -13,14 +13,14 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        box-shadow: 0 0 1px lightblue;
+        border : 1px solid rgb(20, 40, 54);
         padding: 10px 20px;
         width: fit-content;
         border-radius: 50px;
-        font-size: 25px;
+        font-size: 15px;
         .dot{
-            height: 10px;
-            width:10px;
+            height:7px;
+            width:7px;
             background-color: aqua;
             border-radius:50% ;
         }
@@ -30,14 +30,14 @@
     }
     .content{
         display: flex;
-        gap: 50px;
+        gap: 90px;
         .left{
             display: flex;
             flex-direction: column;
             gap:20px;
             p{
                 font-family: 'Inter', sans-serif;
-                width: 500px;
+                width: 550px;
                 font-size: 20px;
                 text-align: justify;
                 color: rgb(133, 131, 131);
@@ -57,7 +57,7 @@
             gap: 40px;
 
             .box{
-                box-shadow: 0 0 2px grey;
+                border: 1.5px solid rgb(20, 40, 54);
                 text-align: center;
                 padding-top: 10px;
                 height: 100px;
@@ -66,6 +66,7 @@
                 display: flex;
                 flex-direction: column;
                 gap: 7px;
+                background-color: rgb(13, 26, 35);
                 h2{
                     font-size: 25px;
                     color: aqua;

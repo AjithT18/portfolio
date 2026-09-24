@@ -7,6 +7,8 @@ import Experince from "./Components/Experience"
 import Education from "./Components/Education"
 import Achivements from "./Components/Achivements"
 import Contact from "./Components/Contact"
+import "./App.css"
+// import "./script/script.js"
 
 function App() {
 

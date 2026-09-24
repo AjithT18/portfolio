@@ -1,11 +1,12 @@
 import "../style/Project.css"
 import "@fortawesome/fontawesome-free/css/all.min.css";
+// import "../script/script.js"
 
 function Projects(){
     return(
         <>
             <div>
-                <div className="project">
+                <div className="project theme">
                     <h1><div className="dot"></div>Projects</h1>
                     <h2>Things I've built. <br />
                     <p>7+ repositories on <a href=""><span>GitHub </span></a>— full-stack web apps, Android, Spring Boot, and AI/ML projects.</p>
@@ -20,7 +21,7 @@ function Projects(){
                                 <div>Java</div>
                                 <div>HTML</div>
                             </div>
-                            <a href=""><i class="fa-brands fa-github"></i> Code</a>
+                            <a href=""><i className="fa-brands fa-github"></i> Code</a>
                         </div>
                         <div className="box">
                             <p className="title">FitQuest</p>
@@ -31,7 +32,7 @@ function Projects(){
                                 <div>Java</div>
                                 <div>HTML</div>
                             </div>
-                            <a href=""><i class="fa-brands fa-github"></i> Code</a>
+                            <a href=""><i className="fa-brands fa-github"></i> Code</a>
                         </div>
                         <div className="box">
                             <p className="title">FitQuest</p>
@@ -42,7 +43,7 @@ function Projects(){
                                 <div>Java</div>
                                 <div>HTML</div>
                             </div>
-                            <a href=""><i class="fa-brands fa-github"></i> Code</a>
+                            <a href=""><i className="fa-brands fa-github"></i> Code</a>
                         </div>
                         <div className="box">
                             <p className="title">FitQuest</p>
@@ -53,7 +54,7 @@ function Projects(){
                                 <div>Java</div>
                                 <div>HTML</div>
                             </div>
-                            <a href=""><i class="fa-brands fa-github"></i> Code</a>
+                            <a href=""><i className="fa-brands fa-github"></i> Code</a>
                         </div>
                         <div className="box">
                             <p className="title">FitQuest</p>
@@ -64,7 +65,7 @@ function Projects(){
                                 <div>Java</div>
                                 <div>HTML</div>
                             </div>
-                            <a href=""><i class="fa-brands fa-github"></i> Code</a>
+                            <a href=""><i className="fa-brands fa-github"></i> Code</a>
                         </div>
                         <div className="box">
                             <p className="title">FitQuest</p>
@@ -75,7 +76,7 @@ function Projects(){
                                 <div>Java</div>
                                 <div>HTML</div>
                             </div>
-                            <a href=""><i class="fa-brands fa-github"></i> Code</a>
+                            <a href=""><i className="fa-brands fa-github"></i> Code</a>
                         </div>
                         <div className="box">
                             <p className="title">FitQuest</p>
@@ -86,12 +87,11 @@ function Projects(){
                                 <div>Java</div>
                                 <div>HTML</div>
                             </div>
-                            <a href=""><i class="fa-brands fa-github"></i> Code</a>
+                            <a href=""><i className="fa-brands fa-github"></i> Code</a>
                         </div>  
                     </div>
                 </div>
             </div>
-            <hr />
         </>
     )
 }

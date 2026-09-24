@@ -1,9 +1,9 @@
 
 
 .project{
-    background-color: rgb(8, 18, 47);
+    background-color: rgb(6, 14, 21);
     color:white;
-    padding : 50px 50px 40px 120px;
+    padding: 50px 200px 30px 170px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -15,10 +15,10 @@
         padding: 10px 20px;
         width: fit-content;
         border-radius: 50px;
-        font-size: 25px;
+        font-size: 15px;
         .dot{
-            height: 10px;
-            width:10px;
+            height: 7px;
+            width:7px;
             background-color: aqua;
             border-radius:50% ;
         }
@@ -45,24 +45,25 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
-            width: 270px;
-            box-shadow: 0 0 2px grey;
+            width: 310px;
+            border: 2px solid rgb(20, 40, 54);
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 10px;
+            background-color: rgb(13, 26, 35);
             .title{
                 font-size: 24px;
                 font-weight: bold;
             }
             .description{
                 color: grey;
-                font-size: 14px;
+                font-size: 17px;
             }
             .tech{
                 display: flex;
                 gap: 10px;
                 div{
-                    font-size: 9px;
+                    font-size: 12px;
                     padding: 3px 8px;
                     box-shadow: 0 0 2px grey;
                     border-radius: 20px;
@@ -77,7 +78,7 @@
                 box-shadow: 0 0 2px grey;
                 border-radius: 20px;
                 width: fit-content;
-                font-size: 12px;
+                font-size: 15px;
             }
         }
     }

@@ -5,14 +5,13 @@ function Experience(){
     return(
         <>
             <div>
-                <div className="experience">
+                <div className="experience theme">
                     <h1><div className="dot"></div>Experience</h1>
                     <h2>Where I've worked.</h2>
                     <div className="contents">
                         <div className="line">
-                            <div className="line1">    
-                            </div>
-                            <i class="fa-solid fa-suitcase"></i>
+                            <div className="line1"></div>
+                            <i className="fa-solid fa-suitcase"></i>
                         </div>
                         <div className="content">
                             <div><h3>Full Stack Web Development Intern</h3><p>Jan 2026 - May 2026</p></div>
@@ -27,7 +26,6 @@ function Experience(){
                     </div>
                 </div>
             </div>
-            <hr/>
         </>
     )
 }

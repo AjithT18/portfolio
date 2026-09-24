@@ -1,9 +1,9 @@
 
 
 .achivements{
-    background-color: rgb(8, 18, 47);
+    background-color: rgb(6, 14, 21);
     color:white;
-    padding : 50px 170px 40px 120px;
+    padding: 50px 200px 30px 170px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -15,24 +15,25 @@
         padding: 10px 20px;
         width: fit-content;
         border-radius: 50px;
-        font-size: 25px;
+        font-size: 15px;
         .dot{
-            height: 10px;
-            width:10px;
+            height: 7px;
+            width:7px;
             background-color: aqua;
             border-radius:50% ;
         }
     }
     .top{
         display: flex;
-        gap :10px;
+        gap :20px;
         .achiv{
-            box-shadow: 0 0 2px grey;
+            border: 2px solid rgb(20, 40, 54);
             display: flex;
             align-items: center;  
             gap:20px;
             padding: 17px;
             border-radius: 20px;
+            background-color: rgb(13, 26, 35);
             .left{
                 box-shadow: 0 0 2px grey;
                 padding: 7px;
@@ -43,10 +44,10 @@
                 flex-direction: column;
                 gap: 10px;
                 h2{
-                    font-size: 17px;
+                    font-size: 20px;
                 }
                 p{
-                    font-size:13px;
+                    font-size:17px;
                     color:grey;
                 }
             }
@@ -58,21 +59,22 @@
         }
     }
     .bottom{
-        box-shadow: 0 0 2px grey;
+        border: 2px solid rgb(20, 40, 54);
         margin-top: 20px;
         padding: 17px;
         border-radius: 20px;
         display:flex;
         flex-direction: column;
         gap: 10px;
+        background-color: rgb(13, 26, 35);
         h2{
-            font-size: 20px;
+            font-size: 24px;
         }
         div{
             display: flex;
             justify-content: space-between;
             padding: 5px 20px 5px 20px;
-            font-size: 13px;
+            font-size: 17px;
             color: grey;
             
             border-radius:7px;

@@ -4,12 +4,12 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 function Skills(){
     return(
         <>
-            <div className="skills">
+            <div className="skills theme">
                 <h1><div className="dot"></div>Skills</h1>
                 <div className="boxes">
                     <div className="box">
                         <div className="title">
-                            <i class="fa-solid fa-code"></i>
+                            <i className="fa-solid fa-code"></i>
                             <p>Languages</p>
                         </div>
                         <div className="langs">
@@ -23,7 +23,7 @@ function Skills(){
                     </div>
                     <div className="box">
                         <div className="title">
-                            <i class="fa-solid fa-code"></i>
+                            <i className="fa-solid fa-code"></i>
                             <p>Languages</p>
                         </div>
                         <div className="langs">
@@ -37,7 +37,7 @@ function Skills(){
                     </div>
                     <div className="box">
                         <div className="title">
-                            <i class="fa-solid fa-code"></i>
+                            <i className="fa-solid fa-code"></i>
                             <p>Languages</p>
                         </div>
                         <div className="langs">
@@ -51,7 +51,7 @@ function Skills(){
                     </div>
                     <div className="box">
                         <div className="title">
-                            <i class="fa-solid fa-code"></i>
+                            <i className="fa-solid fa-code"></i>
                             <p>Languages</p>
                         </div>
                         <div className="langs">
@@ -65,7 +65,7 @@ function Skills(){
                     </div>
                     <div className="box">
                         <div className="title">
-                            <i class="fa-solid fa-code"></i>
+                            <i className="fa-solid fa-code"></i>
                             <p>Languages</p>
                         </div>
                         <div className="langs">
@@ -78,8 +78,7 @@ function Skills(){
                         </div>
                     </div>
                 </div>
-            </div>
-            <hr />  
+            </div> 
         </>
     )
 }

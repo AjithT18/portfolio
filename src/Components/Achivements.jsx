@@ -10,17 +10,17 @@ function Achivements(){
                     <div>
                         <div className="top">
                             <div className="achiv">
-                                <div className="left"><i class="fa-solid fa-award"></i></div>
+                                <div className="left"><i className="fa-solid fa-award"></i></div>
                                 <div className="center">
                                     <h2>100+ LeetCode Problems Solved</h2>
                                     <p>Consitent Practice across DSA, arrays, graphs and dynamic programming.</p>
                                 </div>
                                 <div className="right">
-                                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a href=""><i className="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 </div>
                             </div>
                             <div className="achiv">
-                                <div className="left"><i class="fa-solid fa-award"></i></div>
+                                <div className="left"><i className="fa-solid fa-award"></i></div>
                                 <div className="center">
                                     <h2>100+ LeetCode Problems Solved</h2>
                                     <p>Consitent Practice across DSA, arrays, graphs and dynamic programming.</p>
@@ -31,17 +31,16 @@ function Achivements(){
                             <h2>certificates</h2>
                             <div>
                                 <p>Java Programming - Beginner to Master</p>
-                                <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href=""><i className="fa-solid fa-arrow-up-right-from-square"></i></a>
                             </div>
                             <div>
                                 <p>Java Programming - Beginner to Master</p>
-                                <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href=""><i className="fa-solid fa-arrow-up-right-from-square"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <hr />
         </>
     )
 }
