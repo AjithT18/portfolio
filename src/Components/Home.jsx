@@ -3,9 +3,15 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import profilePhoto from "../assets/images/portfolio_image.png"
 import Navbar from "./Navbar"
 
+
+
 function Home(){
     return (
         <>
+        <div className="mainhome">
+            <div className="navbar1">
+                <Navbar/>
+            </div>
             <div className="home theme">
                 <div className="right">
                     <div className="introduction">
@@ -34,6 +40,7 @@ function Home(){
                     </div>
                 </div>
             </div>
+        </div>
         </>
     )
 }

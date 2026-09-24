@@ -1,4 +1,4 @@
-import Navbar from "./Components/Navbar"
+// import Navbar from "./Components/Navbar"
 import Home from "./Components/Home"
 import About from "./Components/About"
 import Skills from "./Components/Skills"
@@ -8,13 +8,14 @@ import Education from "./Components/Education"
 import Achivements from "./Components/Achivements"
 import Contact from "./Components/Contact"
 import "./App.css"
+// import Home1 from "./Components/Home1"
 // import "./script/script.js"
 
 function App() {
 
   return (
     <>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Home/>
       <About/>
       <Skills/>
