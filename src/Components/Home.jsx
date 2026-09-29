@@ -2,17 +2,18 @@ import "../style/Home.css"
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import profilePhoto from "../assets/images/portfolio_image.png"
 import Navbar from "./Navbar"
+import "../script/script.js"
 
 
 
 function Home(){
     return (
         <>
-        <div className="mainhome">
+        <div className="mainhome theme" id="mainhome">
             <div className="navbar1">
                 <Navbar/>
             </div>
-            <div className="home theme">
+            <div className="home" id="home">
                 <div className="right">
                     <div className="introduction">
                         <h1 className="one">Hi, I'am </h1>

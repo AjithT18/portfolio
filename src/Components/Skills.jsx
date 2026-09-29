@@ -1,10 +1,11 @@
 import "../style/Skills.css"
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import "../script/script.js"
 
 function Skills(){
     return(
         <>
-            <div className="skills theme">
+            <div className="skills theme" id="skills">
                 <h1><div className="dot"></div>Skills</h1>
                 <div className="boxes">
                     <div className="box">

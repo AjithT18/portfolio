@@ -1,10 +1,11 @@
 import "../style/About.css"
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import "../script/script.js"
 
 function About(){
     return (
         <>
-            <div className="about theme">
+            <div className="about theme" id="about">
                 <h1><div className="dot"></div>About</h1>
                 <h2>An engineer who ships.</h2>
                 <div className="content">

@@ -1,11 +1,12 @@
 import "../style/Education.css"
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import "../script/script.js"
 
 function Education(){
     return (
         <>
             <div>
-                <div className="education theme">
+                <div className="education theme" id="education">
                     <h1><div className="dot"></div>Education</h1>
                     <h2>Where I studied.</h2>
                     <div className="cards">

@@ -1,11 +1,12 @@
 import "../style/Achivements.css"
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import "../script/script.js"
 
 function Achivements(){
     return (
         <>
             <div>
-                <div className="achivements">
+                <div className="achivements theme" id="achivement">
                     <h1><div className="dot"></div>Achivements</h1>
                     <div>
                         <div className="top">

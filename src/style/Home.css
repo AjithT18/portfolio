@@ -1,4 +1,9 @@
 
+@keyframes photoframe {
+    from{scale: 1;}
+    to{scale: 1.02;}
+}
+
 .mainhome{
     display: flex;
     flex-direction: column;
@@ -79,8 +84,10 @@
                     width:280px;
                 }
                 .profile_p:hover{
-                    scale:1.05;
+                    animation: photoframe 500ms linear 1 normal;
+                    scale: 1.02;
                 }
+                /* animation: photoframe 30 0ms linear 1 reverse; */
             }
         }
         a{

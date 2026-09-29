@@ -1,11 +1,12 @@
 import "../style/Experience.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import "../script/script.js"
 
 function Experience(){
     return(
         <>
             <div>
-                <div className="experience theme">
+                <div className="experience theme" id="experience">
                     <h1><div className="dot"></div>Experience</h1>
                     <h2>Where I've worked.</h2>
                     <div className="contents">

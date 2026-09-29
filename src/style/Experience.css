@@ -30,19 +30,25 @@
         display: flex;
         .line{
             width: 50px;
-            display: flex;
+            height: 252px;
+            display: grid;
+            place-items: center;
             .line1{
                 width:1px;
                 height:202px;
                 background-color: aqua;
-                position: absolute;
-                left:179px;
-                margin-top: 7px;
+                width: 1px;
+                height: 240px;
+                background-color: aqua;
+                grid-area: 1 / 1;
             }
             i{
-                z-index: 1;
-                margin-top: 26px;
+                grid-area: 1 / 1;
                 font-size: 15px;
+                align-self: start;
+                margin-top: 25px;
+                color: white;
+                padding: 3px;
             }
         }
         .content{

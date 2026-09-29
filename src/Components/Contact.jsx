@@ -1,11 +1,12 @@
 import "../style/Contact.css"
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import "../script/script.js"
 
 function Contact(){
     return(
         <>
             <div>
-                <div className="contact">
+                <div className="contact theme" id="contact">
                     <h1><div className="dot"></div>Contact</h1>
                     <p className="sam">Let's build something.</p>
                     <div className="content">
