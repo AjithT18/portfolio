@@ -1,6 +1,5 @@
 import "../style/About.css"
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import "../script/script.js"
 
 function About(){
     return (

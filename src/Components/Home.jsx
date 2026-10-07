@@ -2,7 +2,6 @@ import "../style/Home.css"
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import profilePhoto from "../assets/images/portfolio_image.png"
 import Navbar from "./Navbar"
-import "../script/script.js"
 
 
 

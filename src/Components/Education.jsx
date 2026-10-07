@@ -1,6 +1,5 @@
 import "../style/Education.css"
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import "../script/script.js"
 
 function Education(){
     return (
