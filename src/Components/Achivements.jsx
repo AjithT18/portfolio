@@ -6,7 +6,7 @@ function Achivements(){
     return (
         <>
             <div>
-                <div className="achivements theme" id="achivement">
+                <div className="achivements theme" id="achivements">
                     <h1><div className="dot"></div>Achivements</h1>
                     <div>
                         <div className="top">

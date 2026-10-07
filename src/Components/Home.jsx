@@ -7,6 +7,9 @@ import "../script/script.js"
 
 
 function Home(){
+
+    let me = "Software Developer"
+    
     return (
         <>
         <div className="mainhome theme" id="mainhome">
@@ -18,7 +21,7 @@ function Home(){
                     <div className="introduction">
                         <h1 className="one">Hi, I'am </h1>
                         <h1 className="two"> Ajith T </h1>
-                        <h1 className="three">Software Developer</h1>
+                        <h1 className="three">{me}</h1>
                         <p>Software Developer with a strong knowledge of Java, SQL, React.js, HTML, CSS, and JavaScript. 
                             Passionate about software development, web technologies, and problem-solving. Seeking an opportunity to work in 
                             a challenging environment where I can apply my technical skills, learn emerging technologies, and contribute to 

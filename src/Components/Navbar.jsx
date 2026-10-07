@@ -15,10 +15,10 @@ function Navbar(){
                     <li><a href="#home"><span>Home</span></a><div className="undermain"><div className="under"></div></div></li>
                     <li><a href="#about">About</a> <div className="undermain"><div className="under"></div></div></li>
                     <li><a href="#skills">Skills</a> <div className="undermain"><div className="under"></div></div></li>
-                    <li><a href="#projects">Projects</a> <div className="undermain"><div className="under"></div></div></li>
+                    <li><a href="#project">Projects</a> <div className="undermain"><div className="under"></div></div></li>
                     <li><a href="#experience">Experience</a> <div className="undermain"><div className="under"></div></div></li>
-                    <li><a href="#skills">Education</a> <div className="undermain"><div className="under"></div></div></li>
-                    <li><a href="#skills">Achivements</a> <div className="undermain"><div className="under"></div></div></li>
+                    <li><a href="#education">Education</a> <div className="undermain"><div className="under"></div></div></li>
+                    <li><a href="#achivements">Achivements</a> <div className="undermain"><div className="under"></div></div></li>
                     <li><a href="#contact">Contact</a> <div className="undermain"><div className="under"></div></div></li>
                 </ul>
                 <div className="nav-right">

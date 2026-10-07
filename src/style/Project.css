@@ -3,7 +3,7 @@
 .project{
     background-color: rgb(6, 14, 21);
     color:white;
-    padding: 50px 200px 30px 170px;
+    padding: 120px 200px 30px 170px;
     display: flex;
     flex-direction: column;
     gap: 30px;
