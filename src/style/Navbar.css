@@ -63,9 +63,15 @@
                 }
             }
         }
-        li:hover{
-            .under{
+        li:hover {
+            .under {
                 animation: underl 300ms linear 0s 1 normal;
+                visibility: visible;
+            }
+        }
+
+        li.active {
+            .under {
                 visibility: visible;
             }
         }
