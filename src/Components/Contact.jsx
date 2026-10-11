@@ -16,7 +16,7 @@ function Contact(){
                                     <div className="lefcon">
                                         <div className="leficon"><i className="fa-regular fa-envelope"></i></div>
                                         <div className="center">
-                                            <p className="main">Email</p>
+                                            <p className="main">EMAIL</p>
                                             <p className="content">ajithajju2814@gmail.com</p>
                                         </div>
                                     </div>
@@ -26,38 +26,38 @@ function Contact(){
                                     <div className="lefcon">
                                         <div className="leficon"><i className="fa-solid fa-phone"></i></div>
                                         <div className="center">
-                                            <p className="main">Email</p>
-                                            <p className="content">ajithajju2814@gmail.com</p>
+                                            <p className="main">PHONE</p>
+                                            <p className="content">+91 7483424493</p>
                                         </div>
                                     </div>
                                     <div className="rightarraw"><i className="fa-solid fa-arrow-right"></i></div>
                                 </div></a>
-                                <a href =""><div className="box">
+                                <a href ="https://www.linkedin.com/in/ajith-t-988069320" target="_blank"><div className="box">
                                     <div className="lefcon">
                                         <div className="leficon"><i className="fa-brands fa-linkedin"></i></div>
                                         <div className="center">
-                                            <p className="main">Email</p>
-                                            <p className="content">ajithajju2814@gmail.com</p>
+                                            <p className="main">LINKEDIN</p>
+                                            <p className="content">Connect to LinkedIn</p>
                                         </div>
                                     </div>
                                     <div className="rightarraw"><i className="fa-solid fa-arrow-right"></i></div>
                                 </div></a>
-                                <a href =""><div className="box">
+                                <a href ="https://github.com/AjithT18" target="_blank"><div className="box">
                                     <div className="lefcon">
                                         <div className="leficon"><i className="fa-brands fa-github"></i></div>
                                         <div className="center">
-                                            <p className="main">Email</p>
-                                            <p className="content">ajithajju2814@gmail.com</p>
+                                            <p className="main">GITHUB</p>
+                                            <p className="content">View my Code</p>
                                         </div>
                                     </div>
                                     <div className="rightarraw"><i className="fa-solid fa-arrow-right"></i></div>
                                 </div></a>
-                                <a href =""><div className="box">
+                                <a href ="https://leetcode.com/u/Ajith_T18/" target="_blank"><div className="box">
                                     <div className="lefcon">
                                         <div className="leficon"><i className="fa-brands fa-leetcode"></i></div>
                                         <div className="center">
-                                            <p className="main">Email</p>
-                                            <p className="content">ajithajju2814@gmail.com</p>
+                                            <p className="main">LEETCODE</p>
+                                            <p className="content">100+ problems solved</p>
                                         </div>
                                     </div>
                                     <div className="rightarraw"><i className="fa-solid fa-arrow-right"></i></div>
@@ -86,9 +86,9 @@ function Contact(){
                 <div className="copyrights">
                     <div>© 2026 Ajith T. All rights reserved.</div>
                     <div className="icon">
-                        <a href=""><i className="fa-brands fa-github"></i></a>                       
-                        <a href=""><i className="fa-brands fa-linkedin"></i></a>
-                        <a href=""><i className="fa-brands fa-leetcode"></i></a>
+                        <a href="https://github.com/AjithT18" target="_blank"><i className="fa-brands fa-github"></i></a>                       
+                        <a href="https://www.linkedin.com/in/ajith-t-988069320" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
+                        <a href="https://leetcode.com/u/Ajith_T18/" target="_blank"><i className="fa-brands fa-leetcode"></i></a>
                         <a href=""><i className="fa-regular fa-envelope"></i></a>
                     </div>
                 </div>

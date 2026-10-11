@@ -14,13 +14,17 @@ function Experience(){
                             <i className="fa-solid fa-suitcase"></i>
                         </div>
                         <div className="content">
-                            <div><h3>Full Stack Web Development Intern</h3><p>Jan 2026 - May 2026</p></div>
+                            <div><h3>Web Development with Gen AI</h3><p>Feb 2026 - May 2026</p></div>
                             <p className="cname">Rooman Technologies Ltd</p>
-                            <p className="techLearn">Java, JDBC, Servlets, Hibernate, Spring Boot, Maven, Gradle, MySQL</p>
+                            <p className="techLearn">Java, HTML, CSS, Java Script, React.js, JDBC, Spring Boot, MySQL</p>
                             <ul>
-                                <li>Built a database-driven website using Java Servlets and JDBC with MySQL.</li>
-                                <li>Developed an Employee Management System using Spring Boot and Hibernate ORM.</li>
-                                <li>Worked full lifecycle on two production-style projects with Maven/Gradle pipelines.</li>
+                                <li>Worked on an AI-Powered Resume Builder with Role-Specific Content Suggestions project using modern 
+web development technologies and AI-based functionalities. </li>
+                                <li>Developed and integrated frontend components using technologies like HTML, CSS, JavaScript, and React.js 
+for creating responsive and user-friendly interfaces. </li>
+                                <li>Worked on backend development concepts using Java, JDBC for application logic and database connectivity. </li>
+                                <li>Improved problem-solving, debugging, teamwork, and project management skills through practical 
+implementation and regular project activities. </li>
                             </ul>
                         </div>
                     </div>

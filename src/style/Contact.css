@@ -68,8 +68,15 @@
                         .center{
                             font-size: 17px;
                             margin-right: 47%;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 5px;
                             .main{
                                 color: grey;
+                                font-size: 15px;
+                            }
+                            .content{
+                                width: max-content;
                             }
                             
                         }

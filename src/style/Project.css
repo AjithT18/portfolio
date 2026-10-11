@@ -1,86 +1,97 @@
-
-
-.project{
-    background-color: rgb(6, 14, 21);
-    color:white;
-    padding: 120px 200px 30px 170px;
+.project {
+  background-color: rgb(6, 14, 21);
+  color: white;
+  padding: 120px 200px 30px 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  h1 {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-    h1{
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 0 1px lightblue;
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 50px;
+    font-size: 15px;
+    .dot {
+      height: 7px;
+      width: 7px;
+      background-color: aqua;
+      border-radius: 50%;
+    }
+  }
+  h2 {
+    font-size: 32px;
+    p {
+      font-size: 15px;
+      font-weight: lighter;
+      color: grey;
+      span {
+        color: aqua;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+      width: 310px;
+      border: 2px solid rgb(20, 40, 54);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      background-color: rgb(13, 26, 35);
+      .titdes {
         display: flex;
-        align-items: center;
-        gap: 10px;
-        box-shadow: 0 0 1px lightblue;
-        padding: 10px 20px;
-        width: fit-content;
-        border-radius: 50px;
-        font-size: 15px;
-        .dot{
-            height: 7px;
-            width:7px;
-            background-color: aqua;
-            border-radius:50% ;
+        flex-direction: column;
+        gap: 20px;
+        .title {
+          font-size: 24px;
+          font-weight: bold;
         }
-    }
-    h2{
-        font-size: 32px;
-        p{
-            font-size: 15px;
-            font-weight: lighter;
+        .description {
+          color: grey;
+          font-size: 17px;
+          text-align: justify;
+        }
+      }
+      .techcode {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+        .tech {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          div {
+            font-size: 12px;
+            padding: 3px 8px;
+            box-shadow: 0 0 2px grey;
+            border-radius: 20px;
             color: grey;
-            span{
-                color: aqua;
-            }
-            a{
-                text-decoration: none;
-            }
+          }
         }
-    }
-    .boxes{
-        display:flex;
-        flex-wrap: wrap;
-        gap: 2%;
-        .box{
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            width: 310px;
-            border: 2px solid rgb(20, 40, 54);
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            background-color: rgb(13, 26, 35);
-            .title{
-                font-size: 24px;
-                font-weight: bold;
-            }
-            .description{
-                color: grey;
-                font-size: 17px;
-            }
-            .tech{
-                display: flex;
-                gap: 10px;
-                div{
-                    font-size: 12px;
-                    padding: 3px 8px;
-                    box-shadow: 0 0 2px grey;
-                    border-radius: 20px;
-                    color: grey;
-                }
-            }
-            a{
-                color: white;
-                text-decoration: none;
-                align-items: center;
-                padding: 3px 8px;
-                box-shadow: 0 0 2px grey;
-                border-radius: 20px;
-                width: fit-content;
-                font-size: 15px;
-            }
+        a {
+          color: white;
+          text-decoration: none;
+          align-items: center;
+          padding: 3px 8px;
+          box-shadow: 0 0 2px grey;
+          border-radius: 20px;
+          width: fit-content;
+          font-size: 15px;
         }
+      }
     }
-
+  }
 }

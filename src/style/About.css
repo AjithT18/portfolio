@@ -31,13 +31,14 @@
     .content{
         display: flex;
         gap: 90px;
+        align-items: start;
         .left{
             display: flex;
             flex-direction: column;
             gap:20px;
             p{
                 font-family: 'Inter', sans-serif;
-                width: 550px;
+                width: 600px;
                 font-size: 20px;
                 text-align: justify;
                 color: rgb(133, 131, 131);
@@ -55,7 +56,6 @@
             display: flex;
             flex-wrap: wrap;
             gap: 40px;
-
             .box{
                 border: 1.5px solid rgb(20, 40, 54);
                 text-align: center;
