@@ -1,9 +1,11 @@
+
 import { useEffect, useState } from "react";
 import "../style/Navbar.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function Navbar() {
     const [activeSection, setActiveSection] = useState("home");
+    const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
         const sections = [
@@ -18,7 +20,8 @@ function Navbar() {
         ];
 
         const handleScroll = () => {
-            const scrollPosition = window.scrollY + window.innerHeight * 0.35;
+            const scrollPosition =
+                window.scrollY + window.innerHeight * 0.35;
 
             let currentSection = sections[0];
 
@@ -34,8 +37,9 @@ function Navbar() {
         };
 
         handleScroll();
-
-        window.addEventListener("scroll", handleScroll, { passive: true });
+        window.addEventListener("scroll", handleScroll, {
+            passive: true
+        });
 
         return () => {
             window.removeEventListener("scroll", handleScroll);
@@ -53,19 +57,34 @@ function Navbar() {
         { label: "Contact", id: "contact" }
     ];
 
+    const handleNavClick = () => {
+        setMenuOpen(false);
+    };
+
     return (
         <div className="navbar theme" id="navbar">
-            <a href="#home" className="logo">
+            <a
+                href="#home"
+                className="logo"
+                onClick={handleNavClick}
+            >
                 <div>Ajith T</div>
             </a>
 
-            <ul className="nav-links" id="navLinks">
+            <ul className={`nav-links ${menuOpen ? "menu-open" : ""}`} id="navLinks">
                 {navItems.map((item) => (
                     <li
                         key={item.id}
-                        className={activeSection === item.id ? "active" : ""}
+                        className={
+                            activeSection === item.id ? "active" : ""
+                        }
                     >
-                        <a href={`#${item.id}`}>{item.label}</a>
+                        <a
+                            href={`#${item.id}`}
+                            onClick={handleNavClick}
+                        >
+                            {item.label}
+                        </a>
 
                         <div className="undermain">
                             <div className="under"></div>
@@ -75,13 +94,33 @@ function Navbar() {
             </ul>
 
             <div className="nav-right">
-                <button className="theme-btn" id="themeCh" type="button">
+                <button
+                    className="theme-btn"
+                    id="themeCh"
+                    type="button"
+                    aria-label="Toggle theme"
+                >
                     <i className="fa-solid fa-moon"></i>
                 </button>
 
                 <a href="#contact" className="lt">
                     <div>Let's talk</div>
                 </a>
+
+                <button
+                    className="menu-toggle"
+                    type="button"
+                    aria-label={menuOpen ? "Close menu" : "Open menu"}
+                    aria-expanded={menuOpen}
+                    aria-controls="navLinks"
+                    onClick={() => setMenuOpen(!menuOpen)}
+                >
+                    <i
+                        className={`fa-solid ${
+                            menuOpen ? "fa-xmark" : "fa-bars"
+                        }`}
+                    ></i>
+                </button>
             </div>
         </div>
     );
