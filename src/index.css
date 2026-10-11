@@ -1,0 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#home,
+#about,
+#skills,
+#project,
+#experience,
+#education,
+#achivements,
+#contact {
+    scroll-margin-top: 30px;
+}
