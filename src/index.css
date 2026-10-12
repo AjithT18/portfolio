@@ -12,3 +12,14 @@ html {
 #contact {
     scroll-margin-top: 30px;
 }
+
+:root{
+    --bck1 : rgb(6, 14, 21);
+    --bck2 : rgb(13, 26, 35);
+    --bck3 : rgb(20, 40, 54);
+    --bck4 : rgb(43, 46, 58);
+    --clr1 : white;
+    --clr2 : black;
+    --clr3 : aqua;
+    --clr4 : grey;
+}

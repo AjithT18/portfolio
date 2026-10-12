@@ -3,12 +3,12 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import profilePhoto from "../assets/images/portfolio_image.png"
 import Navbar from "./Navbar"
 import resume from "../assets/Resume/Ajith_Resume(DCL).pdf"
+// import Color from "../Colors/Color";
+
 
 
 
 function Home(){
-
-    let me = "Software Developer"
     
     return (
         <>
@@ -21,7 +21,7 @@ function Home(){
                     <div className="introduction">
                         <h1 className="one">Hi, I'am </h1>
                         <h1 className="two"> Ajith T </h1>
-                        <h1 className="three">{me}</h1>
+                        <h1 className="three">Software Developer</h1>
                         <p>Software Developer with a strong knowledge of Java, SQL, React.js, HTML, CSS, and JavaScript. 
                             Passionate about software development, web technologies, and problem-solving. Seeking an opportunity to work in 
                             a challenging environment where I can apply my technical skills, learn emerging technologies, and contribute to 

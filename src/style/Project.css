@@ -1,6 +1,6 @@
 .project {
-  background-color: rgb(6, 14, 21);
-  color: white;
+  background-color: var(--bck1);
+  color: var(--clr1);
   padding: 120px 200px 30px 170px;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    box-shadow: 0 0 1px lightblue;
+    border : 1px solid var(--bck3);
     padding: 10px 20px;
     width: fit-content;
     border-radius: 50px;
@@ -45,11 +45,11 @@
       justify-content: space-between;
       gap: 20px;
       width: 310px;
-      border: 2px solid rgb(20, 40, 54);
+      border: 2px solid var(--bck3);
       padding: 20px;
       margin-bottom: 20px;
       border-radius: 10px;
-      background-color: rgb(13, 26, 35);
+      background-color: var(--bck2);
       .titdes {
         display: flex;
         flex-direction: column;
@@ -82,7 +82,7 @@
           }
         }
         a {
-          color: white;
+          color: var(--clr1);
           text-decoration: none;
           align-items: center;
           padding: 3px 8px;

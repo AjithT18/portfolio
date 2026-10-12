@@ -2,8 +2,8 @@
     font-family:'Inter', sans-serif ;
 }
 .about{
-    background-color: rgb(6, 14, 21);
-    color:white;
+    background-color: var(--bck1);
+    color:var(--clr1);
     padding: 120px 200px 30px 170px;
    
     display: flex;
@@ -13,7 +13,7 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        border : 1px solid rgb(20, 40, 54);
+        border : 1px solid var(--bck3);
         padding: 10px 20px;
         width: fit-content;
         border-radius: 50px;
@@ -41,12 +41,12 @@
                 width: 600px;
                 font-size: 20px;
                 text-align: justify;
-                color: rgb(133, 131, 131);
+                color: grey;
             }
             div{
                 font-size: 15px;
                 margin-top: 20px;
-                color: rgb(133, 131, 131);
+                color: grey;
                 i{
                     color:aqua;
                 }
@@ -57,7 +57,7 @@
             flex-wrap: wrap;
             gap: 40px;
             .box{
-                border: 1.5px solid rgb(20, 40, 54);
+                border: 1.5px solid var(--bck3);
                 text-align: center;
                 padding-top: 10px;
                 height: 100px;
@@ -66,7 +66,7 @@
                 display: flex;
                 flex-direction: column;
                 gap: 7px;
-                background-color: rgb(13, 26, 35);
+                background-color: var(--bck2);
                 h2{
                     font-size: 25px;
                     color: aqua;

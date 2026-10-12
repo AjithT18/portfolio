@@ -1,8 +1,8 @@
 
 
 .achivements{
-    background-color: rgb(6, 14, 21);       
-    color:white;
+    background-color: var(--bck1);       
+    color:var(--clr1);
     padding: 120px 200px 30px 170px;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        box-shadow: 0 0 1px lightblue;
+        border : 1px solid var(--bck3);
         padding: 10px 20px;
         width: fit-content;
         border-radius: 50px;
@@ -27,13 +27,13 @@
         display: flex;
         gap :20px;
         .achiv{
-            border: 2px solid rgb(20, 40, 54);
+            border: 2px solid var(--bck3);
             display: flex;
             align-items: center;  
             gap:20px;
             padding: 17px;
             border-radius: 20px;
-            background-color: rgb(13, 26, 35);
+            background-color: var(--bck2);
             width: 50%;
             .left{
                 box-shadow: 0 0 2px grey;
@@ -54,20 +54,20 @@
             }
             .right{
                 a{
-                    color: white;
+                    color: var(--clr1);
                 }
             }
         }
     }
     .bottom{
-        border: 2px solid rgb(20, 40, 54);
+        border: 2px solid var(--bck3);
         margin-top: 20px;
         padding: 17px;
         border-radius: 20px;
         display:flex;
         flex-direction: column;
         gap: 10px;
-        background-color: rgb(13, 26, 35);
+        background-color: var(--bck2);
         h2{
             font-size: 24px;
         }

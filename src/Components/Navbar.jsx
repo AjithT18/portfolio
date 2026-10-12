@@ -106,21 +106,6 @@ function Navbar() {
                 <a href="#contact" className="lt">
                     <div>Let's talk</div>
                 </a>
-
-                <button
-                    className="menu-toggle"
-                    type="button"
-                    aria-label={menuOpen ? "Close menu" : "Open menu"}
-                    aria-expanded={menuOpen}
-                    aria-controls="navLinks"
-                    onClick={() => setMenuOpen(!menuOpen)}
-                >
-                    <i
-                        className={`fa-solid ${
-                            menuOpen ? "fa-xmark" : "fa-bars"
-                        }`}
-                    ></i>
-                </button>
             </div>
         </div>
     );

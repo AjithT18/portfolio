@@ -1,8 +1,8 @@
 
 
 .contact{
-    background-color: rgb(6, 14, 21);
-    color:white;
+    background-color: var(--bck1);
+    color:var(--clr1);
     padding: 120px 200px 30px 170px;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        box-shadow: 0 0 1px lightblue;
+        border : 1px solid var(--bck3);
         padding: 10px 20px;
         width: fit-content;
         border-radius: 50px;
@@ -44,16 +44,16 @@
                 flex-direction: column;
                 gap: 10px;
                 a{
-                    color:white;
+                    color:var(--clr1);
                     text-decoration: none;
                 }
                 .box{
                     display:flex;
                     align-items: center;
-                    border: 2px solid rgb(20, 40, 54);
+                    border: 2px solid var(--bck3);
                     padding: 10px 25px 7px 15px;
                     border-radius: 15px;
-                    background-color: rgb(13, 26, 35);
+                    background-color: var(--bck2);
                     justify-content: space-between;
                     .lefcon{
                         display: flex;
@@ -88,11 +88,11 @@
             }
         }
         .right{
-            border: 2px solid rgb(20, 40, 54);
+            border: 2px solid var(--bck3);
             padding: 20px;
             width: 450px;
             border-radius: 25px;
-            background-color: rgb(13, 26, 35);
+            background-color: var(--bck2);
             form{
                 display: flex;
                 flex-direction: column;
@@ -107,8 +107,8 @@
                         font-size: 17px;
                         border-radius: 10px;
                         padding: 5px 15px;
-                        border:2px solid rgb(20, 40, 54);
-                        background-color: rgb(13, 26, 35);   
+                        border:2px solid var(--bck3);
+                        background-color: var(--bck2);   
                         color:white;
                     }
                     p{
@@ -117,10 +117,10 @@
                         
                     }
                     textarea{
-                        background-color: rgb(13, 26, 35); 
+                        background-color: var(--bck2); 
                         color: white;
                         padding: 5px;
-                        border:2px solid rgb(20, 40, 54);
+                        border:2px solid var(--bck3);
                         border-radius: 10px;
                         font-size: 17px;
                     }
@@ -139,7 +139,7 @@
     border-bottom: 1px solid rgb(76, 76, 76);
 }
 .copyrights{
-    background-color: rgb(6, 14, 21);
+    background-color: var(--bck1);
     color:grey;
     display: flex;
     height: 70px;
@@ -153,7 +153,7 @@
             box-shadow: 0 0 2px grey;
             padding: 5px;
             border-radius: 50%;
-            color: rgb(182, 182, 182);
+            color: grey;
         }
     }
 }

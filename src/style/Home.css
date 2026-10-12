@@ -17,8 +17,8 @@
     width: 100%;
   }
   .home {
-    background-color: rgb(6, 14, 21);
-    color: white;
+    background-color: var(--bck1);
+    color: var(--clr1);
     padding: 170px 200px 30px 170px;
     display: flex;
     justify-content: space-between;
@@ -26,14 +26,13 @@
       display: flex;
       flex-direction: column;
       gap: 30px;
-      /* max-width: 870px; */
       .introduction {
         font-size: 20px;
         display: flex;
         flex-direction: column;
         gap: 10px;
         p {
-          color: rgb(133, 131, 131);
+          color: var(--clr4);
           padding-right: 130px;
           text-align: justify;
         }
@@ -53,13 +52,13 @@
         gap: 60px;
         padding-left: 40px;
         .rp {
-          background-color: rgb(13, 26, 35);
+          background-color: var(--bck2);
           padding: 10px 20px;
           border-radius: 20px;
-          border: 1px solid rgb(20, 40, 54);
+          border: 1px solid var(--bck3);
         }
         .rp:hover {
-          box-shadow: 0 0 10px rgb(20, 40, 54);
+          box-shadow: 0 0 10px var(--bck3);
         }
       }
       .second {
@@ -69,12 +68,12 @@
         font-size: 20px;
         .rlm {
           padding: 7px;
-          background-color: rgb(13, 26, 35);
+          background-color: var(--bck2);
           border-radius: 50%;
-          border: 1px solid rgb(20, 40, 54);
+          border: 1px solid var(--bck3);
         }
         .rlm:hover {
-          box-shadow: 0 0 10px rgb(20, 40, 54);
+          box-shadow: 0 0 10px var(--bck3);
         }
       }
     }
@@ -98,7 +97,7 @@
       }
     }
     a {
-      color: white;
+      color: var(--clr1);
       text-decoration: none;
     }
   }
