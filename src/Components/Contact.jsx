@@ -84,7 +84,7 @@ function Contact(){
                     </div>
                 </div>
                 <div className="copyrights">
-                    <div>© 2026 Ajith T. All rights reserved.</div>
+                    <div className="cpr">© 2026 Ajith T. All rights reserved.</div>
                     <div className="icon">
                         <a href="https://github.com/AjithT18" target="_blank"><i className="fa-brands fa-github"></i></a>                       
                         <a href="https://www.linkedin.com/in/ajith-t-988069320" target="_blank"><i className="fa-brands fa-linkedin"></i></a>

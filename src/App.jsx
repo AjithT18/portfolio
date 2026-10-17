@@ -7,6 +7,7 @@ import Education from "./Components/Education"
 import Achivements from "./Components/Achivements"
 import Contact from "./Components/Contact"
 import "./App.css"
+import "./Responsive.css";
 
 function App() {
 

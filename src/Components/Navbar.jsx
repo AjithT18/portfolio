@@ -7,45 +7,6 @@ function Navbar() {
     const [activeSection, setActiveSection] = useState("home");
     const [menuOpen, setMenuOpen] = useState(false);
 
-    useEffect(() => {
-        const sections = [
-            "home",
-            "about",
-            "skills",
-            "project",
-            "experience",
-            "education",
-            "achivements",
-            "contact"
-        ];
-
-        const handleScroll = () => {
-            const scrollPosition =
-                window.scrollY + window.innerHeight * 0.35;
-
-            let currentSection = sections[0];
-
-            sections.forEach((id) => {
-                const section = document.getElementById(id);
-
-                if (section && section.offsetTop <= scrollPosition) {
-                    currentSection = id;
-                }
-            });
-
-            setActiveSection(currentSection);
-        };
-
-        handleScroll();
-        window.addEventListener("scroll", handleScroll, {
-            passive: true
-        });
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
-
     const navItems = [
         { label: "Home", id: "home" },
         { label: "About", id: "about" },
@@ -57,12 +18,59 @@ function Navbar() {
         { label: "Contact", id: "contact" }
     ];
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition =
+                window.scrollY + window.innerHeight * 0.35;
+
+            let currentSection = "home";
+
+            navItems.forEach(({ id }) => {
+                const section = document.getElementById(id);
+
+                if (
+                    section &&
+                    section.getBoundingClientRect().top +
+                        window.scrollY <= scrollPosition
+                ) {
+                    currentSection = id;
+                }
+            });
+
+            setActiveSection(currentSection);
+        };
+
+        handleScroll();
+
+        window.addEventListener("scroll", handleScroll, {
+            passive: true
+        });
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    useEffect(() => {
+        const closeOnEscape = (event) => {
+            if (event.key === "Escape") {
+                setMenuOpen(false);
+            }
+        };
+
+        window.addEventListener("keydown", closeOnEscape);
+
+        return () => {
+            window.removeEventListener("keydown", closeOnEscape);
+        };
+    }, []);
+
     const handleNavClick = () => {
         setMenuOpen(false);
     };
 
     return (
-        <div className="navbar theme" id="navbar">
+        <nav className="navbar theme" id="navbar">
             <a
                 href="#home"
                 className="logo"
@@ -71,7 +79,26 @@ function Navbar() {
                 <div>Ajith T</div>
             </a>
 
-            <ul className={`nav-links ${menuOpen ? "menu-open" : ""}`} id="navLinks">
+            <button
+                type="button"
+                className="menu-toggle"
+                aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+                aria-expanded={menuOpen}
+                aria-controls="navLinks"
+                onClick={() => setMenuOpen((previous) => !previous)}
+            >
+                <i
+                    className={`fa-solid ${
+                        menuOpen ? "fa-xmark" : "fa-bars"
+                    }`}
+                    aria-hidden="true"
+                />
+            </button>
+
+            <ul
+                className={`nav-links ${menuOpen ? "menu-open" : ""}`}
+                id="navLinks"
+            >
                 {navItems.map((item) => (
                     <li
                         key={item.id}
@@ -87,7 +114,7 @@ function Navbar() {
                         </a>
 
                         <div className="undermain">
-                            <div className="under"></div>
+                            <div className="under" />
                         </div>
                     </li>
                 ))}
@@ -100,14 +127,18 @@ function Navbar() {
                     type="button"
                     aria-label="Toggle theme"
                 >
-                    <i className="fa-solid fa-moon"></i>
+                    <i className="fa-solid fa-moon" aria-hidden="true" />
                 </button>
 
-                <a href="#contact" className="lt">
+                <a
+                    href="#contact"
+                    className="lt"
+                    onClick={handleNavClick}
+                >
                     <div>Let's talk</div>
                 </a>
             </div>
-        </div>
+        </nav>
     );
 }
 

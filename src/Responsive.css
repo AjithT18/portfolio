@@ -1,0 +1,523 @@
+
+/* Global responsive safeguards */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 30px;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+#home,
+#about,
+#skills,
+#project,
+#experience,
+#education,
+#achivements,
+#contact {
+    scroll-margin-top: 10px;
+}
+
+/* =========================
+   TABLETS AND SMALL LAPTOPS
+   ========================= */
+@media (max-width: 1000px) {
+        #home,
+#about,
+#skills,
+#project,
+#experience,
+#education,
+#achivements,
+#contact {
+    scroll-margin-top: 30px;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+    
+    /* Home section */
+    .mainhome .home {
+        
+        padding: 150px 6% 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mainhome .home .right {
+        width: 100%;
+        min-width: 0;
+        gap: 28px;
+    }
+
+    /* Hide profile photo on tablets and mobiles */
+    .mainhome .home .left {
+        display: none;
+    }
+
+    .mainhome .home .right .introduction {
+        width: 100%;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .mainhome .home .right .introduction p {
+        max-width: 760px;
+        width: 100%;
+        padding-right: 0;
+        text-align: justify;
+        line-height: 1.75;
+        overflow-wrap: anywhere;
+    }
+
+    .mainhome .home .right .introduction .one {
+        font-size: clamp(27px, 4vw, 35px);
+    }
+
+    .mainhome .home .right .introduction .two {
+        font-size: clamp(38px, 6vw, 50px);
+    }
+
+    .mainhome .home .right .introduction .three {
+        font-size: clamp(25px, 4vw, 35px);
+    }
+
+    .mainhome .home .right .first {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10%;
+        padding-left: 0;
+    }
+
+    .mainhome .home .right .first .rp {
+        padding: 10px 16px;
+        text-align: center;
+    }
+
+    .mainhome .home .right .second {
+        flex-wrap: wrap;
+        gap: 22px;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    /* Main content sections */
+    .about,
+    .skills,
+    .project,
+    .experience,
+    .education,
+    .achivements,
+    .contact {
+        width: 100%;
+        max-width: 100%;
+        padding: 100px 6% 40px;
+        min-width: 0;
+    }
+
+    #home,
+    #about,
+    #skills,
+    #project,
+    #experience,
+    #education,
+    #achivements,
+    #contact {
+        scroll-margin-top: -70px;
+    }
+
+    /* About */
+    .about .content {
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .about .content .left,
+    .about .content .right {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .about .content .left p {
+        width: 100%;
+        max-width: 100%;
+        text-align: left;
+        overflow-wrap: anywhere;
+    }
+
+    .about .content .right {
+        gap: 16px;
+    }
+
+    .about .content .right .box {
+        width: calc(50% - 8px);
+        min-width: 0;
+    }
+
+    /* Skills */
+    .skills .boxes {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        width: 100%;
+    }
+
+    .skills .boxes .box {
+        width: 100%;
+        min-width: 0;
+        margin-bottom: 0;
+    }
+
+    .skills .boxes .box .title i{
+        width: fit-content;
+    }
+
+    /* Projects */
+    .project .boxes {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        width: 100%;
+    }
+
+    .project .boxes .box {
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+    }
+
+    /* Experience */
+    .experience .contents {
+        width: 100%;
+         max-width: 100%;
+    }
+
+    .experience .contents .content {
+        width: 100%;
+        max-width: 100%;
+        
+    }
+
+    .experience .contents .content div{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    /* Education */
+    .education .cards {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .education .cards .card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    /* Achievements */
+    .achivements .top {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .achivements .top .achiv {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .achivements .bottom a {
+        gap: 12px;
+        padding: 12px;
+        margin-right: 0;
+        overflow-wrap: anywhere;
+    }
+
+    /* Contact */
+    .contact .content {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+        width: 100%;
+    }
+
+    .contact .content .left,
+    .contact .content .right {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .contact .content .left .boxes .box {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .contact .content .left .boxes .box .lefcon {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .contact .content .left .boxes .box .lefcon .center {
+        min-width: 0;
+        margin-right: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .contact .content .left .boxes .box .lefcon .center .content {
+        width: auto;
+    }
+
+    .contact .content .right form {
+        gap: 18px;
+    }
+
+    .contact .content .right form div input,
+    .contact .content .right form div textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* =========================
+   MOBILE PHONES
+   ========================= */
+@media (max-width: 600px) {
+    #home,
+#about,
+#skills,
+#project,
+#experience,
+#education,
+#achivements,
+#contact {
+    scroll-margin-top: 10px;
+}
+    .mainhome .home {
+        padding: 150px 5% 35px;
+    }
+
+    .mainhome .home .right {
+        gap: 24px;
+    }
+
+    .mainhome .home .right .introduction {
+        gap: 30px;
+        font-size: 16px;
+    }
+
+    .mainhome .home .right .introduction p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .mainhome .home .right .introduction .one {
+        font-size: 27px;
+    }
+
+    .mainhome .home .right .introduction .two {
+        font-size: 40px;
+    }
+
+    .mainhome .home .right .introduction .three {
+        font-size: 25px;
+    }
+
+    .mainhome .home .right .first {
+        gap: 12px;
+    }
+
+    .mainhome .home .right .first a {
+        max-width: 100%;
+    }
+
+    .mainhome .home .right .first .rp {
+        font-size: 14px;
+        padding: 10px 13px;
+    }
+
+    .mainhome .home .right .second {
+        gap: 18px;
+        font-size: 19px;
+    }
+
+    .about,
+    .skills,
+    .project,
+    .experience,
+    .education,
+    .achivements,
+    .contact {
+        padding: 90px 5% 35px;
+        gap: 22px;
+    }
+
+    .about h2,
+    .project h2 {
+        font-size: 27px;
+        line-height: 1.35;
+    }
+
+    .about .content {
+        gap: 24px;
+    }
+
+    .about .content .left p {
+        font-size: 16px;
+    }
+
+    .about .content .right .box {
+        height: auto;
+        min-height: 100px;
+        padding: 14px 8px;
+        overflow-wrap: anywhere;
+    }
+
+    .about .content .right .box h2 {
+        font-size: 22px;
+    }
+
+    .skills .boxes,
+    .project .boxes {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 15px;
+    }
+
+    .skills .boxes .box,
+    .project .boxes .box {
+        padding: 17px;
+    }
+
+    .experience .contents .content {
+        width: calc(100% - 55px);
+        padding: 16px;
+        overflow-wrap: anywhere;
+    }
+
+    .experience .contents .content h3 {
+        font-size: 20px;
+    }
+
+    .education .cards .card {
+        padding: 18px;
+        gap: 14px;
+    }
+
+    .education .cards .card .left {
+        flex-shrink: 0;
+    }
+
+    .education .cards .card .right {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .achivements .top .achiv {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        padding: 15px;
+    }
+
+    .achivements .top .achiv .center h2 {
+        font-size: 18px;
+        overflow-wrap: anywhere;
+    }
+
+    .achivements .bottom {
+        padding: 14px;
+    }
+
+    .achivements .bottom h2 {
+        font-size: 20px;
+    }
+
+    .achivements .bottom a {
+        font-size: 14px;
+    }
+
+    .contact .sam {
+        font-size: 25px;
+    }
+
+    .contact .content .left .sam1 {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .contact .content .left .boxes .box {
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .contact .content .left .boxes .box .lefcon .leficon {
+        margin-right: 10px;
+    }
+
+    .contact .content .left .boxes .box .lefcon .center {
+        font-size: 14px;
+    }
+
+    .contact .content .left .boxes .box .lefcon .center .main {
+        font-size: 13px;
+    }
+
+    .contact .content .right {
+        padding: 15px;
+    }
+
+    .contact .content .right form div input,
+    .contact .content .right form div textarea {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .copyrights {
+        height: auto;
+        min-height: 70px;
+        padding: 20px 40px;
+        text-align: center;
+    }
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

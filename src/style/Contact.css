@@ -154,6 +154,9 @@
             padding: 5px;
             border-radius: 50%;
             color: grey;
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 1/1;
         }
     }
 }

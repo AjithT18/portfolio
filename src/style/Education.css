@@ -45,7 +45,7 @@
                 border-radius: 12px;
                 height: fit-content;
                 color: aqua;
-                background-color: rgb(60, 92, 92);
+                background-color: var(--bck4);
             }
             .right{
                 display: flex;

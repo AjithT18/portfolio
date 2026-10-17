@@ -10,7 +10,7 @@ html {
 #education,
 #achivements,
 #contact {
-    scroll-margin-top: 30px;
+    scroll-margin-top: 10px;
 }
 
 :root{
@@ -23,3 +23,47 @@ html {
     --clr3 : aqua;
     --clr4 : grey;
 }
+
+
+/* Fix page width and unwanted white space */
+html,
+body,
+#root {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+
+html {
+    overflow-x: clip;
+}
+
+body {
+    overflow-x: clip;
+    background-color: var(--bck1);
+}
+
+#root {
+    overflow-x: clip;
+}
+
+.mainhome {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    background-color: var(--bck1);
+}
+
+.mainhome .home {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.mainhome .home .right,
+.mainhome .home .left {
+    min-width: 0;
+}
+
