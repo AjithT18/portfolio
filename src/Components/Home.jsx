@@ -35,7 +35,7 @@ function Home(){
                     <div className="second">
                         <a className="rlm" href="https://github.com/AjithT18" target="_blank"><i className="fa-brands fa-github"></i></a>
                         <a className="rlm" href="https://www.linkedin.com/in/ajith-t-988069320" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
-                        <a className="rlm" href=""><i className="fa-regular fa-envelope" target="_blank"></i></a>
+                        <a className="rlm" href="#contact"><i className="fa-regular fa-envelope" target="_blank"></i></a>
                     </div>
                 </div>
                 <div className="left">

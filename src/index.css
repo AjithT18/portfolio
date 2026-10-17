@@ -37,7 +37,10 @@ html {
     --nav-bg: rgba(6, 14, 21, 0.88);
     --input-bg: #0d1a23;
     --input-text: #ffffff;
+
+   --pbs : rgb(24, 82, 133);
 }
+
 
 /* Light theme: reference screenshot colors */
 :root[data-theme="light"] {
@@ -62,6 +65,8 @@ html {
     --nav-bg: rgba(246, 251, 251, 0.92);
     --input-bg: #f9fcfc;
     --input-text: #101820;
+    
+    --pbs : rgb(142, 183, 218);
 }
 
 /* Global theme colors */

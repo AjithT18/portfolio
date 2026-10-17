@@ -159,7 +159,7 @@
 }
 
 /* Tablet and mobile navigation */
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
     .mainhome .navbar1 .navbar {
         position: relative;
         display: flex;
