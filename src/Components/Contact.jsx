@@ -25,7 +25,7 @@ function Contact() {
     setStatus("");
 
     try {
-      const response = await fetch("https://ajitht-portfolio-api.vercel.app/api/contact", {
+      const response = await fetch("https://ajith-t-portfolio-api.vercel.app/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

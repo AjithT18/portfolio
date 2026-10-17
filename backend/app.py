@@ -16,7 +16,7 @@ app = Flask(__name__)
 CORS(app, resources={
     r"/api/*": {
         "origins": os.getenv(
-            "FRONTEND_URL", "http://localhost:5173"
+            "FRONTEND_URL", "https://ajith-t-portfolio.vercel.app/"
         )
     }
 })
