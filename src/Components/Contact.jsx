@@ -25,18 +25,25 @@ function Contact() {
     setStatus("");
 
     try {
-      const response = await fetch("https://ajith-t-portfolio-api.vercel.app/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const response = await fetch(
+        `${import.meta.env.VITE_API_URL}/api/contact`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            message: formData.message,
+          }),
         },
-        body: JSON.stringify(formData),
-      });
+      );
 
       const result = await response.json();
 
       if (!response.ok) {
-        throw new Error(result.message || "Failed to send message.");
+        throw new Error(result.message || "Unable to send message.");
       }
 
       setStatus(result.message);
@@ -180,7 +187,7 @@ function Contact() {
                   <textarea
                     name="message"
                     value={formData.message}
-                    onChange={handleChange} 
+                    onChange={handleChange}
                     required
                     id="message1"
                     rows={4}
