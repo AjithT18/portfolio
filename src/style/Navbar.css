@@ -292,3 +292,22 @@
 }
 
 
+/* Navbar glass effect in light mode */
+:root[data-theme="light"] .mainhome .navbar1 {
+    background: rgba(246, 251, 251, 0);
+    border-bottom: 1px solid #d5e2e5;
+}
+
+/* Mobile menu in light mode */
+:root[data-theme="light"] .navbar .nav-links.menu-open {
+    background: rgba(246, 251, 251, 0.98);
+    border-color: #d5e2e5;
+    box-shadow: 0 12px 25px rgba(20, 40, 54, 0.1);
+}
+
+:root[data-theme="light"] .navbar .menu-toggle {
+    background-color: #edf5f6;
+    color: #101820;
+    border-color: #d5e2e5;
+}
+

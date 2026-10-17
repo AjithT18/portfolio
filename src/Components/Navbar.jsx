@@ -6,6 +6,9 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 function Navbar() {
     const [activeSection, setActiveSection] = useState("home");
     const [menuOpen, setMenuOpen] = useState(false);
+    const [isLightTheme, setIsLightTheme] = useState(() => {
+        return localStorage.getItem("portfolio-theme") === "light";
+    });
 
     const navItems = [
         { label: "Home", id: "home" },
@@ -18,14 +21,25 @@ function Navbar() {
         { label: "Contact", id: "contact" }
     ];
 
+    // Apply the selected theme to the entire application
     useEffect(() => {
+        const theme = isLightTheme ? "light" : "dark";
+
+        document.documentElement.setAttribute("data-theme", theme);
+        localStorage.setItem("portfolio-theme", theme);
+    }, [isLightTheme]);
+
+    // Highlight the active navbar section while scrolling
+    useEffect(() => {
+        const sections = navItems.map((item) => item.id);
+
         const handleScroll = () => {
             const scrollPosition =
                 window.scrollY + window.innerHeight * 0.35;
 
-            let currentSection = "home";
+            let currentSection = sections[0];
 
-            navItems.forEach(({ id }) => {
+            sections.forEach((id) => {
                 const section = document.getElementById(id);
 
                 if (
@@ -51,26 +65,16 @@ function Navbar() {
         };
     }, []);
 
-    useEffect(() => {
-        const closeOnEscape = (event) => {
-            if (event.key === "Escape") {
-                setMenuOpen(false);
-            }
-        };
-
-        window.addEventListener("keydown", closeOnEscape);
-
-        return () => {
-            window.removeEventListener("keydown", closeOnEscape);
-        };
-    }, []);
-
     const handleNavClick = () => {
         setMenuOpen(false);
     };
 
+    const toggleTheme = () => {
+        setIsLightTheme((previousTheme) => !previousTheme);
+    };
+
     return (
-        <nav className="navbar theme" id="navbar">
+        <div className="navbar theme" id="navbar">
             <a
                 href="#home"
                 className="logo"
@@ -82,16 +86,14 @@ function Navbar() {
             <button
                 type="button"
                 className="menu-toggle"
-                aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+                aria-label={menuOpen ? "Close menu" : "Open menu"}
                 aria-expanded={menuOpen}
-                aria-controls="navLinks"
                 onClick={() => setMenuOpen((previous) => !previous)}
             >
                 <i
                     className={`fa-solid ${
                         menuOpen ? "fa-xmark" : "fa-bars"
                     }`}
-                    aria-hidden="true"
                 />
             </button>
 
@@ -114,7 +116,7 @@ function Navbar() {
                         </a>
 
                         <div className="undermain">
-                            <div className="under" />
+                            <div className="under"></div>
                         </div>
                     </li>
                 ))}
@@ -125,9 +127,24 @@ function Navbar() {
                     className="theme-btn"
                     id="themeCh"
                     type="button"
-                    aria-label="Toggle theme"
+                    onClick={toggleTheme}
+                    aria-label={
+                        isLightTheme
+                            ? "Switch to dark theme"
+                            : "Switch to light theme"
+                    }
+                    title={
+                        isLightTheme
+                            ? "Switch to dark theme"
+                            : "Switch to light theme"
+                    }
                 >
-                    <i className="fa-solid fa-moon" aria-hidden="true" />
+                    <i
+                        className={`fa-solid ${
+                            isLightTheme ? "fa-moon" : "fa-sun"
+                        }`}
+                        aria-hidden="true"
+                    ></i>
                 </button>
 
                 <a
@@ -138,7 +155,7 @@ function Navbar() {
                     <div>Let's talk</div>
                 </a>
             </div>
-        </nav>
+        </div>
     );
 }
 

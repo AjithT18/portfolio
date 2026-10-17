@@ -13,16 +13,192 @@ html {
     scroll-margin-top: 10px;
 }
 
-:root{
-    --bck1 : rgb(6, 14, 21);
-    --bck2 : rgb(13, 26, 35);
-    --bck3 : rgb(20, 40, 54);
-    --bck4 : rgb(43, 46, 58);
-    --clr1 : white;
-    --clr2 : black;
-    --clr3 : aqua;
-    --clr4 : grey;
+
+/* Default theme: Dark */
+:root {
+    color-scheme: dark;
+
+    --bck1: rgb(6, 14, 21);
+    --bck2: rgb(13, 26, 35);
+    --bck3: rgb(20, 40, 54);
+    --bck4: rgb(43, 46, 58);
+
+    --clr1: white;
+    --clr2: black;
+    --clr3: aqua;
+    --clr4: grey;
+
+    --page-bg: #060e15;
+    --card-bg: #0d1a23;
+    --card-border: #142836;
+    --text-primary: #ffffff;
+    --text-secondary: #a0aab5;
+    --accent: #00d5d5;
+    --nav-bg: rgba(6, 14, 21, 0.88);
+    --input-bg: #0d1a23;
+    --input-text: #ffffff;
 }
+
+/* Light theme: reference screenshot colors */
+:root[data-theme="light"] {
+    color-scheme: light;
+
+    --bck1: #f6fbfb;
+    --bck2: #edf5f6;
+    --bck3: #d5e2e5;
+    --bck4: #e1edef;
+
+    --clr1: #101820;
+    --clr2: #101820;
+    --clr3: #00aeb0;
+    --clr4: #61717e;
+
+    --page-bg: #f6fbfb;
+    --card-bg: #edf5f6;
+    --card-border: #d5e2e5;
+    --text-primary: #101820;
+    --text-secondary: #586b7d;
+    --accent: #00aeb0;
+    --nav-bg: rgba(246, 251, 251, 0.92);
+    --input-bg: #f9fcfc;
+    --input-text: #101820;
+}
+
+/* Global theme colors */
+html,
+body,
+#root {
+    background-color: var(--page-bg);
+    color: var(--text-primary);
+}
+
+body {
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease;
+}
+
+/* Existing portfolio sections */
+.mainhome,
+.home,
+.about,
+.skills,
+.project,
+.experience,
+.education,
+.achivements,
+.contact {
+    background-color: var(--page-bg);
+    color: var(--text-primary);
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease;
+}
+
+/* Cards and content panels */
+.about .content .right .box,
+.skills .boxes .box,
+.project .boxes .box,
+.experience .contents .content,
+.education .cards .card,
+.achivements .top .achiv,
+.achivements .bottom,
+.contact .content .left .boxes .box,
+.contact .content .right {
+    background-color: var(--card-bg);
+    border-color: var(--card-border);
+    color: var(--text-primary);
+}
+
+/* Text that is secondary to headings */
+.about p,
+.project p,
+.experience p,
+.education p,
+.achivements p,
+.contact p {
+    color: var(--text-secondary);
+}
+
+/* Theme toggle */
+.navbar .nav-right .theme-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--card-border);
+    border-radius: 50%;
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+    cursor: pointer;
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.2s ease;
+}
+
+.navbar .nav-right .theme-btn:hover {
+    transform: rotate(12deg);
+    color: var(--accent);
+}
+
+/* Navigation colors */
+.mainhome .navbar1 {
+    background: var(--nav-bg);
+}
+
+.navbar a {
+    color: var(--text-primary);
+}
+
+.navbar .logo {
+    color: var(--accent);
+}
+
+.navbar .nav-links li .under {
+    background-color: var(--accent);
+}
+
+.navbar .nav-right .lt {
+    background-color: var(--accent);
+    color: #071519;
+}
+
+/* Form controls */
+input,
+textarea,
+select {
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    border-color: var(--card-border);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--text-secondary);
+}
+
+/* Make theme changes smooth for panels and links */
+a,
+button,
+input,
+textarea {
+    transition:
+        color 0.25s ease,
+        background-color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+    }
+}
+
 
 
 /* Fix page width and unwanted white space */
