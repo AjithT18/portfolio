@@ -109,7 +109,7 @@
                         padding: 5px 15px;
                         border:2px solid var(--bck3);
                         background-color: var(--bck2);   
-                        color:white;
+                        color:var(--clr1);
                     }
                     p{
                         color: grey;
@@ -118,7 +118,7 @@
                     }
                     textarea{
                         background-color: var(--bck2); 
-                        color: white;
+                        color:var(--clr1);
                         padding: 5px;
                         border:2px solid var(--bck3);
                         border-radius: 10px;
