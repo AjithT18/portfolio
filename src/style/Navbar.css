@@ -210,7 +210,7 @@
         text-align: center;
         right: 20px;
         z-index: 1001;
-        width: 35%;
+        width: 40%;
         max-height: calc(100dvh - 75px);
         overflow-y: auto;
         flex-direction: column;
